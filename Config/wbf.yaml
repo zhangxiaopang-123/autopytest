@@ -1,0 +1,56 @@
+
+# prd_pro_ws = 'ws://wsnx.v3.wbfexchina.top/kline-api/ws'
+# prd_pro_ws = 'wss://beta-ws.wbfex.info:32004/kline-api/ws'
+# url_ws = prd_pro_ws
+
+
+
+online:
+  access-key: a3bc779590ce47b678b3351ffeee8217
+  secret-key: b115d24d07ba6da2be9d5289b255abfe
+  host: https://openapi.wbf.live
+  _host: wss://ws.wbf.live/kline-api
+
+
+test:
+  db:
+    database: xtest
+    host: 10.33.2.143
+    port: 3306
+    user: root
+    password:
+  # 第一个执行摆盘操作、第二个数据验证操作
+  user: 15837645115,15837645114
+  pwd: zhang123456
+  access-key: 893fabccc64749980808774244b60330,bb0aac30e0b3c58dcbdd619da372a7f2
+  secret-key: dd396c29f603250e9636c31fbb4d3f21,faca13a8727d31fc12a6c6b91cb9c938
+  host: http://openapinx.v3.wbfexchina.top
+  uid: 98797342,60092536
+  ws: ws://wsnx.v3.wbfexchina.top/kline-api
+
+
+
+stg:
+  db:
+    host: pre-v3.cluster-c6rgl3tuc9lz.rds.cn-northwest-1.amazonaws.com.cn
+    port: 3306
+    user: test_wallet_writer
+    password: LdSqnUA68ZV8sBnC
+    database:
+  access-key: d8ad787a4d7f5a2a4a29c7d1c1aa1113
+  secret-key: d8ad787a4d7f5a2a4a29c7d1c1aa1113
+  host: https://beta-openapi.wbfex.info:32004
+  uid:  61827648
+  ws: wss://beta-ws.wbfex.info:32004/kline-api
+
+
+
+
+
+
+
+
+
+
+
+

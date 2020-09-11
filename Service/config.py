@@ -10,7 +10,6 @@ eos = 'zhf'
 usd = 'btc'
 env = ['test', 'stg', 'online']
 
-
 def environment(sex):
     """
     sex=0时返回测试环境

@@ -37,10 +37,12 @@ stg:
     user: test_wallet_writer
     password: LdSqnUA68ZV8sBnC
     database:
-  access-key: d8ad787a4d7f5a2a4a29c7d1c1aa1113
-  secret-key: d8ad787a4d7f5a2a4a29c7d1c1aa1113
+  user: 15837645115
+  password: zhang123456
+  access-key: b94001761e59951c661b4d1cc0e3258c
+  secret-key: 29315853e0264c65faa05c5177f215e4
   host: https://beta-openapi.wbfex.info:32004
-  uid:  61827648
+  uid:  69234152
   ws: wss://beta-ws.wbfex.info:32004/kline-api
 
 

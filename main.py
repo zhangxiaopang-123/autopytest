@@ -1,4 +1,6 @@
-import pytest, os, allure
+import pytest
+import os
+import allure
 # # allure generate --clean D:/autopytest/report/xml/ -o D:/autopytest/report/html/
 # d:
 # cd D:\autopytest\

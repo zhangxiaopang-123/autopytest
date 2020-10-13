@@ -14,11 +14,11 @@ online:
 
 test:
   db:
-    database: xtest
-    host: 10.33.2.143
+    host: wbfex-v3test-aurora.cluster-c6rgl3tuc9lz.rds.cn-northwest-1.amazonaws.com.cn
     port: 3306
-    user: root
-    password:
+    user: wbfdevwr
+    password: r32wdfd43dvx
+    database: exchange_kline
   # 第一个执行摆盘操作、第二个数据验证操作
   user: 15837645115,15837645114
   pwd: zhang123456
@@ -26,7 +26,7 @@ test:
   secret-key: dd396c29f603250e9636c31fbb4d3f21,faca13a8727d31fc12a6c6b91cb9c938
   host: http://openapinx.v3.wbfexchina.top
   uid: 98797342,60092536
-  ws: ws://wsnx.v3.wbfexchina.top/kline-api
+  _host: ws://wsnx.v3.wbfexchina.top/kline-api
 
 
 
@@ -36,18 +36,12 @@ stg:
     port: 3306
     user: test_wallet_writer
     password: LdSqnUA68ZV8sBnC
-    database:
-  user: 15837645115
-  password: zhang123456
-  access-key: b94001761e59951c661b4d1cc0e3258c
-  secret-key: 29315853e0264c65faa05c5177f215e4
+    database: exchange_kline
+  access-key: 57aeb234d3034285e2336d2a317c9942,bdfe50c34968f17a2274dc1949871199
+  secret-key: 4c79da4af377f300c358cc6e022b4dc5,8f2ddfd9ff6b39d95b7480308c8b4398
   host: https://beta-openapi.wbfex.info:32004
   uid:  69234152
-  ws: wss://beta-ws.wbfex.info:32004/kline-api
-
-
-
-
+  _host: wss://beta-ws.wbfex.info:32004/kline-api
 
 
 

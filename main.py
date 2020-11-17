@@ -10,4 +10,4 @@ import allure
 
 if __name__ == "__main__":
     pytest.main(["-s", "-q", '--alluredir', 'D:/autopytest/report/xml'])
-    # pytest.main(["-s", ""])
+    # os.system('allure generate --clean D:/autopytest/report/xml/ -o D:/autopytest/report/html/')

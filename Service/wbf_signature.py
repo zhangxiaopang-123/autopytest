@@ -38,44 +38,46 @@ class Signature:
     def get_sign(self, types, p, request_path, host):
         if types == 'old':
             si = self.sign(p)
-            print('请求老的验签方式:{}'.format(si))
+            # print('请求老的验签方式:{}'.format(si))
         else:
             si = self.share_sign(p, 'GET', host, request_path)
-            print('请求新的验签方式:{}'.format(si))
+            # print('请求新的验签方式:{}'.format(si))
 
         url = host + request_path
-        print("请求域名:{}".format(url))
+        # print("请求域名:{}".format(url))
         p['sign'] = si
-        print("请求参数:{}".format(p))
+        # print("请求参数:{}".format(p))
         try:
             res = requests.get(url=url, params=p)
+            print('请求信息:{}'.format(res))
+            Con().info_log(p, url, res)
             if res.status_code == 200:
                 r = res.json()
-                Con().return_log(p, url, r)
                 return r
         except Exception as e:
-            Con().return_log(p, url, e)
+            Con().error_log(p, url, e)
 
     def post_sign(self, types, p, request_path, host):
         if types == 'old':
             si = self.sign(p)
-            print('请求老的验签方式:{}'.format(si))
+            # print('请求老的验签方式:{}'.format(si))
         else:
             si = self.share_sign(p, 'POST', host, request_path)
-            print('请求新的验签方式:{}'.format(si))
+            # print('请求新的验签方式:{}'.format(si))
         url = host + request_path
-        print("请求域名:{}".format(url))
+        # print("请求域名:{}".format(url))
         p['sign'] = si
         print("请求参数:{}".format(p))
         try:
             res = requests.post(url=url, data=p, headers={'content-type': "application/x-www-form-urlencoded", 'cache-control': "no-cache"})
             print('response-code:{}'.format(res))
+            Con().info_log(p, url, res)
             if res.status_code == 200:
                 r = res.json()
-                Con().return_log(p, url, r)
+                Con().info_log(p, url, r)
                 return r
         except Exception as e:
-            Con().return_log(p, url, e)
+            Con().error_log(p, url, e)
 
 
 

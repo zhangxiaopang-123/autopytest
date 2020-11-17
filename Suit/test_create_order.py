@@ -76,7 +76,7 @@ class TestOpenApi(object):
 
     @allure.story('下单参数校验-price-价格')
     @pytest.mark.parametrize('price', [0, 4000000, -1, 'zhang', ''])
-    def test_order_check_volume(self, price):
+    def test_order_check_price(self, price):
         request_path = '/open/api/create_order'
         params = {
             "api_key": self.api_key,
@@ -99,7 +99,7 @@ class TestOpenApi(object):
 
     @allure.story('下单参数校验-price-type 下单类型,价格组合校验')
     @pytest.mark.parametrize('price,type', [(1, 2), ('', 2)])
-    def test_order_check_volume(self, price, type):
+    def test_order_check_volume_type(self, price, type):
         request_path = '/open/api/create_order'
         params = {
             "api_key": self.api_key,
@@ -111,15 +111,8 @@ class TestOpenApi(object):
         }
         result = Signature(self.secret_key).post_sign(config.types, params, request_path, self.host)
         print('下单response:{}'.format(result))
-        # if params['price'] == '':
-        #     assert result['code'] == '100005'
-        # elif params['price'] in [0, -1]:
-        #     assert result['code'] == '10095'
-        # elif params['price'] == 4000000:
-        #     assert result['code'] == '10094'
-        # else:
-        #     assert result['code'] == '5'
+        assert result['code'] == '5'
 
 
 if __name__ == '__main__':
-    pytest.main(["-s", "test_account_balance.py"])
+    pytest.main(["-s", "test_create_order.py"])

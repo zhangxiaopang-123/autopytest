@@ -23,7 +23,7 @@ class SQL:
         db.commit()
         db.close()
         # print(demo[0])
-        return demo[0]
+        return demo
 
     def sql_insert(self, sql):
         db = pymysql.connect(

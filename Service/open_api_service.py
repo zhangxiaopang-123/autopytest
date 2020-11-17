@@ -3,9 +3,9 @@ import requests
 from Service.config import Con
 from Service import config
 
-api_key = Con().environment(config.env_name)[0]
-secret_key = Con().environment(config.env_name)[1]
-host = Con().environment(config.env_name)[-2]
+api_key = Con().environment()[0]
+secret_key = Con().environment()[1]
+host = Con().environment()[-2]
 
 
 class Order:
@@ -22,11 +22,11 @@ class Order:
             res = requests.get(url=url, params=params)
             if res.status_code == 200:
                 r = res.json()
-                Con().return_log(params, url, r)
+                Con().info_log(params, url, r)
                 return r
         except Exception as e:
             # print('error：{}'.format(e))
-            Con().return_log(params, url, e)
+            Con().error_log(params, url, e)
 
     def lastprice(self, symbol):
         """
@@ -38,14 +38,14 @@ class Order:
         params = {"symbol": symbol}
         try:
             result = requests.get(url, params=params)
-            print(result.json())
+            Con().info_log(params, url, result)
             if result.status_code == 200:
                 last_price = result.json()['data'][symbol]
-                Con().return_log(params, url, last_price)
+                Con().info_log(params, url, last_price)
                 return last_price
         except Exception as e:
             print("error:{}".format(e))
-            Con().return_log(params, url, e)
+            Con().error_log(params, url, e)
 
     def account_balance(self, types, currency):
         """
@@ -55,13 +55,13 @@ class Order:
         p = {"api_key": api_key, "time": Con().now_time()}
         request_path = '/open/api/user/account'
         result = wbf_signature.Signature(secret_key).get_sign(types, p, request_path, host)
-        print('查询资产响应:{}'.format(result))
-        # coin = result['data']['coin_list']
-        # for i in range(0, len(coin)):
-        #     if coin[i]['coin'] == currency:
-        #         Con().return_log(currency, coin[i]['normal'], coin[i]['locked'])
-        #         print('查询资产:{},{}'.format(coin[i]['normal'], coin[i]['locked']))
-        #         return coin[i]['normal'], coin[i]['locked']
+        # print('查询资产响应:{}'.format(result))
+        coin = result['data']['coin_list']
+        for i in range(0, len(coin)):
+            if coin[i]['coin'] == currency:
+                Con().info_log(currency, coin[i]['normal'], coin[i]['locked'])
+                print('查询资产:{},{}'.format(coin[i]['normal'], coin[i]['locked']))
+                return coin[i]['normal'], coin[i]['locked']
 
     def unfilled_order(self, types, p):
         """
@@ -94,14 +94,19 @@ class Order:
         result = wbf_signature.Signature(secret_key).post_sign(types, p, request_path, host)
         print('撤销订单:{}'.format(result))
 
-    def cancel_all(self, types, p):
+    def cancel_all(self, types):
         """
         撤销全部订单
         :param p:
         :return:
         """
         request_path = '/open/api/cancel_order_all'
-        result = wbf_signature.Signature(secret_key).post_sign(types, p, request_path, host)
+        params = {
+            "api_key": api_key,
+            "time": Con().now_time(),
+            "symbol": config.symbol
+        }
+        result = wbf_signature.Signature(secret_key).post_sign(types, params, request_path, host)
         print('撤销全部订单:{}'.format(result))
 
     def order_place(self, types, p):
@@ -134,15 +139,19 @@ class Order:
         result = wbf_signature.Signature(secret_key).post_sign(types, p, request_path, host)
         print('批量创建订单:{}'.format(result))
 
-    def unfilled_order_v2(self, types, p):
+    def unfilled_order_v2(self, types):
         """
         查询当前委托单
         :param types:
         :return:
         """
-        # print(p)
+        params = {
+            "api_key": api_key,
+            "time": Con().now_time(),
+            "symbol": config.symbol
+        }
         request_path = '/open/api/v2/new_order'
-        result = wbf_signature.Signature(secret_key).get_sign(types, p, request_path, host)
+        result = wbf_signature.Signature(secret_key).get_sign(types, params, request_path, host)
         print('查询当前委托单:{}'.format(result))
 
     def order_detail(self, types, p):
@@ -156,7 +165,9 @@ class Order:
 
 
 if __name__ == '__main__':
-    Order().lastprice('usdtdusd')
+
+    Order().account_balance(config.types, config.currency[0])[0]
+    # Order().lastprice('xpusdt')
     # Order().account_balance('old', 'eos')  # 账户资产新老验签方式验证
     # p = {
     #         "api_key": api_key,
@@ -203,7 +214,7 @@ if __name__ == '__main__':
     #         "pageSize": 1,  # 页面大小;选填
     #         "page": 1,  # 页面;选填
     #     }
-    # Order().unfilled_order_v2('new', p)  # 查询当前委托单
+    # Order().unfilled_order_v2('old')  # 查询当前委托单
     # p = {
     #     "api_key": api_key,
     #     "time": Con().now_time(),

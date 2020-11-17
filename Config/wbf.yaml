@@ -14,16 +14,19 @@ online:
 
 test:
   db:
-    host: wbfex-v3test-aurora.cluster-c6rgl3tuc9lz.rds.cn-northwest-1.amazonaws.com.cn
+#    host: wbfex-v3test-aurora.cluster-c6rgl3tuc9lz.rds.cn-northwest-1.amazonaws.com.cn
+    host: v3dev.c6rgl3tuc9lz.rds.cn-northwest-1.amazonaws.com.cn
     port: 3306
     user: wbfdevwr
     password: r32wdfd43dvx
-    database: exchange_kline
+    database: exchange
   # 第一个执行摆盘操作、第二个数据验证操作
-  user: 15837645115,15837645114
+  user: 15812344321,15837645115,15837645114
   pwd: zhang123456
-  access-key: 893fabccc64749980808774244b60330,bb0aac30e0b3c58dcbdd619da372a7f2
-  secret-key: dd396c29f603250e9636c31fbb4d3f21,faca13a8727d31fc12a6c6b91cb9c938
+#  access-key: 893fabccc64749980808774244b60330,bb0aac30e0b3c58dcbdd619da372a7f2
+#  secret-key: dd396c29f603250e9636c31fbb4d3f21,faca13a8727d31fc12a6c6b91cb9c938
+  access-key: b6301c6a9fec6ce9215eb7b1ea4d29c3,bb0aac30e0b3c58dcbdd619da372a7f2
+  secret-key: 74dc2201065a55b4a02fe4d5ee505758,faca13a8727d31fc12a6c6b91cb9c938
   host: http://openapinx.v3.wbfexchina.top
   uid: 98797342,60092536
   _host: ws://wsnx.v3.wbfexchina.top/kline-api

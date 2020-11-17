@@ -11,9 +11,9 @@ import allure
 class TestOpenApi(object):
 
     def setup(self):
-        self.api_key = Con().environment(config.env_name)[0]
-        self.secret_key = Con().environment(config.env_name)[1]
-        self.host = Con().environment(config.env_name)[-2]
+        self.api_key = Con().environment()[0]
+        self.secret_key = Con().environment()[1]
+        self.host = Con().environment()[-2]
         self.tie = Con().now_time()
         print('测试用例开始执行!')
 

@@ -200,8 +200,8 @@ class TestOpenApiClearing(object):
         xp_locked = open_api_service.Order().account_balance(config.types, config.currency[0])[1]  # xp 期末冻结余额
         usd_normal = open_api_service.Order().account_balance(config.types, config.currency[1])[0]  # usdt 期末正常余额
         usd_locked = open_api_service.Order().account_balance(config.types, config.currency[1])[1]  # usdt 期末冻结余额
-        assert self.usd_normal == usd_normal and self.usd_locked == usd_locked  # 卖单市价自动撤单 usd余额无变化
-        assert self.xp_normal == xp_normal and self.xp_locked == xp_locked  # 市价自动撤单 xp余额无变化
+        assert float(self.usd_normal) == float(usd_normal) and float(self.usd_locked) == float(usd_locked)  # 卖单市价自动撤单 usd余额无变化
+        assert float(self.xp_normal) == float(xp_normal) and float(self.xp_locked) == float(xp_locked)  # 市价自动撤单 xp余额无变化
         sql = "select id,status,side,in_seq from  ex_order_%s where user_id = %d order by id desc limit 1;" % (
             config.symbol, config.user_id)  # 查询订单
         rq = sqlmethods.SQL(
@@ -408,8 +408,8 @@ class TestOpenApiClearing(object):
         rq = sqlmethods.SQL(
             self.db_host, self.db_user, self.db_password, self.db_port, self.db_database).sql_select(sl)
         print(rq)
-        assert res['data']['order_id'] == rq[-1][0] and rq[-1][1] == 2 and rq[-1][2] == 'BUY' and rq[-1][3] == 1
-        assert result['data']['order_id'] == rq[0][0] and rq[0][1] == 3 and rq[0][2] == 'SELL' and rq[0][3] == 1
+        assert result['data']['order_id'] == rq[-1][0] and rq[-1][1] == 3 and rq[-1][2] == 'SELL' and rq[-1][3] == 1
+        assert res['data']['order_id'] == rq[0][0] and rq[0][1] == 2 and rq[0][2] == 'BUY' and rq[0][3] == 1
         open_api_service.Order().cancel_all(config.types)
 
     @allure.story('限价卖单完全成交')
@@ -513,6 +513,208 @@ class TestOpenApiClearing(object):
         assert res['data']['order_id'] == rq[0][0] and rq[0][1] == 2 and rq[0][2] == 'BUY' and rq[0][3] == 1
         assert result['data']['order_id'] == rq[-1][0] and rq[-1][1] == 4 and rq[-1][2] == 'SELL' and rq[0][3] == 1
 
+    @allure.story('市价买单部分成交自动撤单')
+    def test_buy_market_part_filled_cancel(self):
+        params = {
+            "side": "SELL",
+            "type": 1,
+            "volume": 1,
+            "price": open_api_service.Order().lastprice(config.symbol),
+        }
+        params.update(self.p)
+        # 下卖单
+        result = Signature(self.secret_key).post_sign(config.types, params, self.request_path, self.host)
+        print("buy-{}".format(result))
+        data = {
+            "side": "BUY",
+            "type": 2,
+            "volume": round(float(params["volume"]*params["price"]) + 1, 4),
+            "price": open_api_service.Order().lastprice(config.symbol),
+        }
+        data.update(self.p)
+        # 下市价买单
+        res = Signature(self.secret_key).post_sign(config.types, data, self.request_path, self.host)
+        print("sell-{}".format(res))
+
+        time.sleep(10)
+        xp_normal = open_api_service.Order().account_balance(config.types, config.currency[0])[0]  # xp 期末正常余额
+        xp_locked = open_api_service.Order().account_balance(config.types, config.currency[0])[1]  # xp 期末冻结余额
+        usd_normal = open_api_service.Order().account_balance(config.types, config.currency[1])[0]  # usdt 期末正常余额
+        usd_locked = open_api_service.Order().account_balance(config.types, config.currency[1])[1]  # usdt 期末冻结余额
+        print("xp期末正常余额:{};xp期末冻结余额:{};usdt期末正常余额:{};usdt期末冻结余额:{}".format(
+            xp_normal, xp_locked, usd_normal, usd_locked))
+
+        # 期初正常usd - 成交价*卖出量*手续费率  = 期末正常usd
+        assert (round(float(self.usd_normal) - float(
+            float(params["price"]) * float(1) * float(0.1)), 4)) == round(float(usd_normal), 4)
+        # 期初冻结usd  = 期末冻结usd
+        assert round(float(self.usd_locked), 4) == round(float(usd_locked),
+                                                                                                      4)
+        # 期初正常xp - 卖出量*手续费率 = 期末正常xp
+        assert round(float(self.xp_normal) - float(float(1) * float(0.1)), 4) == round(float(xp_normal), 4)
+        # 期初冻结xp  = 期末冻结xp
+        assert (round(float(self.xp_locked), 4)) == round(float(xp_locked), 4)
+
+        sl = "select id,status,side,in_seq from  ex_order_%s where user_id = %d order by id desc limit 2;" % (
+            config.symbol, config.user_id)  # 查询订单
+        rq = sqlmethods.SQL(
+            self.db_host, self.db_user, self.db_password, self.db_port, self.db_database).sql_select(sl)
+        print(rq)
+        assert result['data']['order_id'] == rq[-1][0] and rq[-1][1] == 2 and rq[-1][2] == 'SELL' and rq[-1][3] == 1
+        assert res['data']['order_id'] == rq[0][0] and rq[0][1] == 2 and rq[0][2] == 'BUY' and rq[0][3] == 1
+
+    @allure.story('市价买单完全成交')
+    def test_buy_market_filled(self):
+        params = {
+            "side": "SELL",
+            "type": 1,
+            "volume": 1,
+            "price": open_api_service.Order().lastprice(config.symbol),
+        }
+        params.update(self.p)
+        # 下卖单
+        result = Signature(self.secret_key).post_sign(config.types, params, self.request_path, self.host)
+        print("buy-{}".format(result))
+        data = {
+            "side": "BUY",
+            "type": 2,
+            "volume": round(float(params["volume"]*params["price"]), 4),
+            "price": open_api_service.Order().lastprice(config.symbol),
+        }
+        data.update(self.p)
+        # 下买单
+        res = Signature(self.secret_key).post_sign(config.types, data, self.request_path, self.host)
+        print("sell-{}".format(res))
+
+        time.sleep(10)
+        xp_normal = open_api_service.Order().account_balance(config.types, config.currency[0])[0]  # xp 期末正常余额
+        xp_locked = open_api_service.Order().account_balance(config.types, config.currency[0])[1]  # xp 期末冻结余额
+        usd_normal = open_api_service.Order().account_balance(config.types, config.currency[1])[0]  # usdt 期末正常余额
+        usd_locked = open_api_service.Order().account_balance(config.types, config.currency[1])[1]  # usdt 期末冻结余额
+        print("xp期末正常余额:{};xp期末冻结余额:{};usdt期末正常余额:{};usdt期末冻结余额:{}".format(
+            xp_normal, xp_locked, usd_normal, usd_locked))
+
+        # 期初正常usd - 成交价*卖出量*手续费率 - （买入量-卖出量）*买入价 = 期末正常usd
+        assert (round(float(self.usd_normal) - float(
+            float(params["price"]) * float(1) * float(0.1)), 4)
+                ) == round(float(usd_normal), 4)
+        # 期初冻结usd + （买入量-卖出量）*买入价 = 期末冻结usd
+        assert round(float(self.usd_locked), 4) == round(float(usd_locked),
+                                                         4)
+        # 期初正常xp - 卖出量*手续费率 = 期末正常xp
+        assert round(float(self.xp_normal) - float(float(1) * float(0.1)), 4) == round(float(xp_normal), 4)
+        # 期初冻结xp  = 期末冻结xp
+        assert (round(float(self.xp_locked), 4)) == round(float(xp_locked), 4)
+
+        sl = "select id,status,side,in_seq from  ex_order_%s where user_id = %d order by id desc limit 2;" % (
+            config.symbol, config.user_id)  # 查询订单
+        rq = sqlmethods.SQL(
+            self.db_host, self.db_user, self.db_password, self.db_port, self.db_database).sql_select(sl)
+        print(rq)
+        assert result['data']['order_id'] == rq[-1][0] and rq[-1][1] == 2 and rq[-1][2] == 'SELL' and rq[-1][3] == 1
+        assert res['data']['order_id'] == rq[0][0] and rq[0][1] == 2 and rq[0][2] == 'BUY' and rq[0][3] == 1
+
+    @allure.story('市价卖单部分成交自动撤单')
+    def test_sell_market_part_filled_cancel(self):
+        params = {
+            "side": "BUY",
+            "type": 1,
+            "volume": 1,
+            "price": open_api_service.Order().lastprice(config.symbol),
+        }
+        params.update(self.p)
+        # 下买单
+        result = Signature(self.secret_key).post_sign(config.types, params, self.request_path, self.host)
+        print("buy-{}".format(result))
+        data = {
+            "side": "SELL",
+            "type": 2,
+            "volume": float(params["volume"]) + 1,
+            "price": open_api_service.Order().lastprice(config.symbol),
+        }
+        data.update(self.p)
+        # 下卖单
+        res = Signature(self.secret_key).post_sign(config.types, data, self.request_path, self.host)
+        print("sell-{}".format(res))
+
+        time.sleep(10)
+        xp_normal = open_api_service.Order().account_balance(config.types, config.currency[0])[0]  # xp 期末正常余额
+        xp_locked = open_api_service.Order().account_balance(config.types, config.currency[0])[1]  # xp 期末冻结余额
+        usd_normal = open_api_service.Order().account_balance(config.types, config.currency[1])[0]  # usdt 期末正常余额
+        usd_locked = open_api_service.Order().account_balance(config.types, config.currency[1])[1]  # usdt 期末冻结余额
+        print("xp期末正常余额:{};xp期末冻结余额:{};usdt期末正常余额:{};usdt期末冻结余额:{}".format(
+            xp_normal, xp_locked, usd_normal, usd_locked))
+
+        # 期初正常usd - 成交价*买入量*手续费率 = 期末正常usd
+        assert (round(float(self.usd_normal) - float(
+            float(params["price"]) * float(1) * float(0.1)), 4)) == round(float(usd_normal), 4)
+        # 期初冻结usd  = 期末冻结usd
+        assert round(float(self.usd_locked), 4) == round(float(usd_locked),
+                                                         4)
+        # 期初正常xp - 买入量*手续费率 - （卖出量-买入量） = 期末正常xp
+        assert round(float(self.xp_normal) - float(float(1) * float(0.1)), 4) == round(float(xp_normal), 4)
+
+        # 期初冻结xp   = 期末冻结xp
+        assert (round(float(self.xp_locked), 4)) == round(float(xp_locked), 4)
+        sl = "select id,status,side,in_seq from  ex_order_%s where user_id = %d order by id desc limit 2;" % (
+            config.symbol, config.user_id)  # 查询订单
+        rq = sqlmethods.SQL(
+            self.db_host, self.db_user, self.db_password, self.db_port, self.db_database).sql_select(sl)
+        print(rq)
+        assert result['data']['order_id'] == rq[-1][0] and rq[-1][1] == 2 and rq[-1][2] == 'BUY' and rq[-1][3] == 1
+        assert res['data']['order_id'] == rq[0][0] and rq[0][1] == 2 and rq[0][2] == 'SELL' and rq[0][3] == 1
+        open_api_service.Order().cancel_all(config.types)
+
+    @allure.story('市价卖单完全成交')
+    def test_sell_market_filled(self):
+        params = {
+            "side": "BUY",
+            "type": 1,
+            "volume": 1,
+            "price": open_api_service.Order().lastprice(config.symbol),
+        }
+        params.update(self.p)
+        # 下买单
+        result = Signature(self.secret_key).post_sign(config.types, params, self.request_path, self.host)
+        print("buy-{}".format(result))
+        data = {
+            "side": "SELL",
+            "type": 1,
+            "volume": params["volume"],
+            "price": open_api_service.Order().lastprice(config.symbol),
+        }
+        data.update(self.p)
+        # 下卖单
+        res = Signature(self.secret_key).post_sign(config.types, data, self.request_path, self.host)
+        print("sell-{}".format(res))
+
+        time.sleep(10)
+        xp_normal = open_api_service.Order().account_balance(config.types, config.currency[0])[0]  # xp 期末正常余额
+        xp_locked = open_api_service.Order().account_balance(config.types, config.currency[0])[1]  # xp 期末冻结余额
+        usd_normal = open_api_service.Order().account_balance(config.types, config.currency[1])[0]  # usdt 期末正常余额
+        usd_locked = open_api_service.Order().account_balance(config.types, config.currency[1])[1]  # usdt 期末冻结余额
+        print("xp期末正常余额:{};xp期末冻结余额:{};usdt期末正常余额:{};usdt期末冻结余额:{}".format(
+            xp_normal, xp_locked, usd_normal, usd_locked))
+
+        # 期初正常usd - 成交价*买入量*手续费率  = 期末正常usd
+        assert (round(float(self.usd_normal) - float(
+            float(params["price"]) * float(1) * float(0.1)), 4)
+                ) == round(float(usd_normal), 4)
+        # 期初冻结usd  = 期末冻结usd
+        assert round(float(self.usd_locked), 4) == round(float(usd_locked),
+                                                         4)
+        # 期初正常xp - 卖出量*手续费率 = 期末正常xp
+        assert round(float(self.xp_normal) - float(float(1) * float(0.1)), 4) == round(float(xp_normal), 4)
+        # 期初冻结xp  = 期末冻结xp
+        assert (round(float(self.xp_locked), 4)) == round(float(xp_locked), 4)
+
+        sl = "select id,status,side,in_seq from  ex_order_%s where user_id = %d order by id desc limit 2;" % (
+            config.symbol, config.user_id)  # 查询订单
+        rq = sqlmethods.SQL(
+            self.db_host, self.db_user, self.db_password, self.db_port, self.db_database).sql_select(sl)
+        print(rq)
+        assert result['data']['order_id'] == rq[-1][0] and rq[-1][1] == 2 and rq[-1][2] == 'BUY' and rq[-1][3] == 1
+        assert res['data']['order_id'] == rq[0][0] and rq[0][1] == 2 and rq[0][2] == 'SELL' and rq[0][3] == 1
 
 
 

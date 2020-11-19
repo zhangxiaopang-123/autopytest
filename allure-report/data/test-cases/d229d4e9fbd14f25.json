@@ -1,0 +1,121 @@
+{
+  "uid" : "d229d4e9fbd14f25",
+  "name" : "test_buy_limit",
+  "fullName" : "Suit.test_clearing.TestOpenApiClearing#test_buy_limit",
+  "historyId" : "295c86ebbfe4a7cd968a97cf5991b53a",
+  "time" : {
+    "start" : 1605689048959,
+    "stop" : 1605689054973,
+    "duration" : 6014
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1605689044732,
+      "stop" : 1605689044772,
+      "duration" : 40
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a42356a6111b3397",
+      "name" : "log",
+      "source" : "a42356a6111b3397.txt",
+      "type" : "text/plain",
+      "size" : 5232
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "限价买单挂单"
+  }, {
+    "name" : "feature",
+    "value" : "清算验证,/open/api/create_order"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suit"
+  }, {
+    "name" : "suite",
+    "value" : "test_clearing"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestOpenApiClearing"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-ORREJKSR"
+  }, {
+    "name" : "thread",
+    "value" : "20780-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Suit.test_clearing"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "31d6fe167f538773",
+      "status" : "passed",
+      "time" : {
+        "start" : 1605685073834,
+        "stop" : 1605685076920,
+        "duration" : 3086
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "cfbf15f513717e11",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/58/allure/#testresult/cfbf15f513717e11",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605685073834,
+          "stop" : 1605685076920,
+          "duration" : 3086
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d229d4e9fbd14f25.json",
+  "parameterValues" : [ ]
+}

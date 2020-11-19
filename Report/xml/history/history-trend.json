@@ -1,0 +1,145 @@
+[ {
+  "buildOrder" : 58,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/58/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 0,
+    "broken" : 22,
+    "skipped" : 0,
+    "passed" : 18,
+    "unknown" : 0,
+    "total" : 40
+  }
+}, {
+  "buildOrder" : 57,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/57/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 2,
+    "broken" : 4,
+    "skipped" : 0,
+    "passed" : 18,
+    "unknown" : 0,
+    "total" : 24
+  }
+}, {
+  "buildOrder" : 56,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/56/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 22,
+    "unknown" : 0,
+    "total" : 22
+  }
+}, {
+  "buildOrder" : 55,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/55/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 1,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 21,
+    "unknown" : 0,
+    "total" : 22
+  }
+}, {
+  "buildOrder" : 50,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/50/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 1,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 18,
+    "unknown" : 0,
+    "total" : 19
+  }
+}, {
+  "buildOrder" : 49,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/49/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 19,
+    "unknown" : 0,
+    "total" : 19
+  }
+}, {
+  "buildOrder" : 48,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/48/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 1,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 18,
+    "unknown" : 0,
+    "total" : 19
+  }
+}, {
+  "buildOrder" : 47,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/47/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 14,
+    "unknown" : 0,
+    "total" : 14
+  }
+}, {
+  "buildOrder" : 46,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/46/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 14,
+    "unknown" : 0,
+    "total" : 14
+  }
+}, {
+  "buildOrder" : 45,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/45/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 14,
+    "unknown" : 0,
+    "total" : 14
+  }
+}, {
+  "buildOrder" : 44,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/44/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 0,
+    "unknown" : 0,
+    "total" : 0
+  }
+}, {
+  "buildOrder" : 43,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/43/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 14,
+    "unknown" : 0,
+    "total" : 14
+  }
+} ]

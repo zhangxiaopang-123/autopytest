@@ -1,0 +1,72 @@
+INFO     root:config.py:74 {'api_key': 'b6301c6a9fec6ce9215eb7b1ea4d29c3', 'time': 1605689071, 'sign': '15433bfeb4a749b536c51c0dc8fe73d8'}
+INFO     root:config.py:74 http://openapinx.v3.wbfexchina.top/open/api/user/account
+INFO     root:config.py:74 <Response [200]>
+INFO     root:config.py:74 xp
+INFO     root:config.py:74 897.73000000
+INFO     root:config.py:74 0.00000000
+INFO     root:config.py:74 {'api_key': 'b6301c6a9fec6ce9215eb7b1ea4d29c3', 'time': 1605689072, 'sign': '8490c1e49f9361d4c328755f08a276cd'}
+INFO     root:config.py:74 http://openapinx.v3.wbfexchina.top/open/api/user/account
+INFO     root:config.py:74 <Response [200]>
+INFO     root:config.py:74 xp
+INFO     root:config.py:74 897.73000000
+INFO     root:config.py:74 0.00000000
+INFO     root:config.py:74 {'api_key': 'b6301c6a9fec6ce9215eb7b1ea4d29c3', 'time': 1605689072, 'sign': '8490c1e49f9361d4c328755f08a276cd'}
+INFO     root:config.py:74 http://openapinx.v3.wbfexchina.top/open/api/user/account
+INFO     root:config.py:74 <Response [200]>
+INFO     root:config.py:74 usdt
+INFO     root:config.py:74 386.38
+INFO     root:config.py:74 0.00000000
+INFO     root:config.py:74 {'api_key': 'b6301c6a9fec6ce9215eb7b1ea4d29c3', 'time': 1605689073, 'sign': 'fbc1b8fbf962aa92385856f644f32dcc'}
+INFO     root:config.py:74 http://openapinx.v3.wbfexchina.top/open/api/user/account
+INFO     root:config.py:74 <Response [200]>
+INFO     root:config.py:74 usdt
+INFO     root:config.py:74 386.38
+INFO     root:config.py:74 0.00000000
+INFO     root:config.py:74 {'api_key': 'b6301c6a9fec6ce9215eb7b1ea4d29c3', 'time': 1605689073, 'symbol': 'xpusdt', 'sign': '5f4181fe878e0f5abafb789bcb2aa91f'}
+INFO     root:config.py:74 http://openapinx.v3.wbfexchina.top/open/api/cancel_order_all
+INFO     root:config.py:74 <Response [200]>
+INFO     root:config.py:74 {'api_key': 'b6301c6a9fec6ce9215eb7b1ea4d29c3', 'time': 1605689073, 'symbol': 'xpusdt', 'sign': '5f4181fe878e0f5abafb789bcb2aa91f'}
+INFO     root:config.py:74 http://openapinx.v3.wbfexchina.top/open/api/cancel_order_all
+INFO     root:config.py:74 {'code': '0', 'msg': 'suc', 'data': None}
+INFO     root:config.py:74 {'symbol': 'xpusdt'}
+INFO     root:config.py:74 http://openapinx.v3.wbfexchina.top/open/api/market
+INFO     root:config.py:74 <Response [200]>
+INFO     root:config.py:74 {'symbol': 'xpusdt'}
+INFO     root:config.py:74 http://openapinx.v3.wbfexchina.top/open/api/market
+INFO     root:config.py:74 6.0
+INFO     root:config.py:74 {'side': 'SELL', 'type': 1, 'volume': 1, 'price': 6.0, 'api_key': 'b6301c6a9fec6ce9215eb7b1ea4d29c3', 'time': 1605689071, 'symbol': 'xpusdt', 'sign': 'b7bb8b0decf016060d86aeffb737c1ca'}
+INFO     root:config.py:74 http://openapinx.v3.wbfexchina.top/open/api/create_order
+INFO     root:config.py:74 <Response [200]>
+INFO     root:config.py:74 {'side': 'SELL', 'type': 1, 'volume': 1, 'price': 6.0, 'api_key': 'b6301c6a9fec6ce9215eb7b1ea4d29c3', 'time': 1605689071, 'symbol': 'xpusdt', 'sign': 'b7bb8b0decf016060d86aeffb737c1ca'}
+INFO     root:config.py:74 http://openapinx.v3.wbfexchina.top/open/api/create_order
+INFO     root:config.py:74 {'code': '0', 'msg': 'suc', 'data': {'order_id': 25356}}
+INFO     root:config.py:74 {'api_key': 'b6301c6a9fec6ce9215eb7b1ea4d29c3', 'time': 1605689075, 'symbol': 'xpusdt', 'sign': '87df0ee773045db8b983920f9caf65b8'}
+INFO     root:config.py:74 http://openapinx.v3.wbfexchina.top/open/api/cancel_order_all
+INFO     root:config.py:74 <Response [200]>
+INFO     root:config.py:74 {'api_key': 'b6301c6a9fec6ce9215eb7b1ea4d29c3', 'time': 1605689075, 'symbol': 'xpusdt', 'sign': '87df0ee773045db8b983920f9caf65b8'}
+INFO     root:config.py:74 http://openapinx.v3.wbfexchina.top/open/api/cancel_order_all
+INFO     root:config.py:74 {'code': '0', 'msg': 'suc', 'data': None}
+INFO     root:config.py:74 {'api_key': 'b6301c6a9fec6ce9215eb7b1ea4d29c3', 'time': 1605689075, 'sign': '8e1e9e3fb244f8df1a5e26d812ab77cf'}
+INFO     root:config.py:74 http://openapinx.v3.wbfexchina.top/open/api/user/account
+INFO     root:config.py:74 <Response [200]>
+INFO     root:config.py:74 xp
+INFO     root:config.py:74 897.73000000
+INFO     root:config.py:74 0.00000000
+INFO     root:config.py:74 {'api_key': 'b6301c6a9fec6ce9215eb7b1ea4d29c3', 'time': 1605689075, 'sign': '8e1e9e3fb244f8df1a5e26d812ab77cf'}
+INFO     root:config.py:74 http://openapinx.v3.wbfexchina.top/open/api/user/account
+INFO     root:config.py:74 <Response [200]>
+INFO     root:config.py:74 xp
+INFO     root:config.py:74 897.73000000
+INFO     root:config.py:74 0.00000000
+INFO     root:config.py:74 {'api_key': 'b6301c6a9fec6ce9215eb7b1ea4d29c3', 'time': 1605689076, 'sign': 'd599d0912f1d6b157711e0b2fb8abc2f'}
+INFO     root:config.py:74 http://openapinx.v3.wbfexchina.top/open/api/user/account
+INFO     root:config.py:74 <Response [200]>
+INFO     root:config.py:74 usdt
+INFO     root:config.py:74 386.38
+INFO     root:config.py:74 0.00000000
+INFO     root:config.py:74 {'api_key': 'b6301c6a9fec6ce9215eb7b1ea4d29c3', 'time': 1605689077, 'sign': 'bfe638fb03c1bc5aa74276e6513e0e36'}
+INFO     root:config.py:74 http://openapinx.v3.wbfexchina.top/open/api/user/account
+INFO     root:config.py:74 <Response [200]>
+INFO     root:config.py:74 usdt
+INFO     root:config.py:74 386.38
+INFO     root:config.py:74 0.00000000

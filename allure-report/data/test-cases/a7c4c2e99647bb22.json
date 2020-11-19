@@ -1,0 +1,210 @@
+{
+  "uid" : "a7c4c2e99647bb22",
+  "name" : "test_order_check_price[-1]",
+  "fullName" : "Suit.test_create_order.TestOpenApi#test_order_check_price",
+  "historyId" : "25ad69e337d19f23fdc73e106271bd89",
+  "time" : {
+    "start" : 1605689284315,
+    "stop" : 1605689284630,
+    "duration" : 315
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1605689044732,
+      "stop" : 1605689044772,
+      "duration" : 40
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1605689279070,
+      "stop" : 1605689279137,
+      "duration" : 67
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f0345ea9419b223f",
+      "name" : "log",
+      "source" : "f0345ea9419b223f.txt",
+      "type" : "text/plain",
+      "size" : 718
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1605689285726,
+      "stop" : 1605689285726,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "创建订单,/open/api/create_order"
+  }, {
+    "name" : "story",
+    "value" : "下单参数校验-price-价格"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suit"
+  }, {
+    "name" : "suite",
+    "value" : "test_create_order"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestOpenApi"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-ORREJKSR"
+  }, {
+    "name" : "thread",
+    "value" : "20780-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Suit.test_create_order"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "price",
+    "value" : "-1"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "aaea1e625e1dd97b",
+      "status" : "broken",
+      "statusDetails" : "TypeError: environment() takes 1 positional argument but 2 were given",
+      "time" : {
+        "start" : 1605685292027,
+        "stop" : 1605685292027,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "57f3bcaae53e8585",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/58/allure/#testresult/57f3bcaae53e8585",
+        "status" : "broken",
+        "statusDetails" : "TypeError: environment() takes 1 positional argument but 2 were given",
+        "time" : {
+          "start" : 1605685292027,
+          "stop" : 1605685292027,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "97e72911ed11615f",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/57/allure/#testresult/97e72911ed11615f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602809852657,
+          "stop" : 1602809852755,
+          "duration" : 98
+        }
+      }, {
+        "uid" : "318db33b7cf51fad",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/56/allure/#testresult/318db33b7cf51fad",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602655160466,
+          "stop" : 1602655160662,
+          "duration" : 196
+        }
+      }, {
+        "uid" : "9494d9ba86792a55",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/55/allure/#testresult/9494d9ba86792a55",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602655105799,
+          "stop" : 1602655106080,
+          "duration" : 281
+        }
+      }, {
+        "uid" : "c7e35696f88096b3",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/50/allure/#testresult/c7e35696f88096b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602654280192,
+          "stop" : 1602654280407,
+          "duration" : 215
+        }
+      }, {
+        "uid" : "7365251752870e01",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/49/allure/#testresult/7365251752870e01",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602653982604,
+          "stop" : 1602653982762,
+          "duration" : 158
+        }
+      }, {
+        "uid" : "7f3666fe1e61c173",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/48/allure/#testresult/7f3666fe1e61c173",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602653784649,
+          "stop" : 1602653784890,
+          "duration" : 241
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a7c4c2e99647bb22.json",
+  "parameterValues" : [ "-1" ]
+}

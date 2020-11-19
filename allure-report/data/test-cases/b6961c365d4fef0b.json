@@ -1,0 +1,91 @@
+{
+  "uid" : "b6961c365d4fef0b",
+  "name" : "test_sell_market",
+  "fullName" : "Suit.test_clearing.TestOpenApiClearing#test_sell_market",
+  "historyId" : "e43773471e67a5f915094f36899b0a63",
+  "time" : {
+    "start" : 1605685110810,
+    "stop" : 1605685114413,
+    "duration" : 3603
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1605685071003,
+      "stop" : 1605685071043,
+      "duration" : 40
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "88206964d8562181",
+      "name" : "log",
+      "source" : "88206964d8562181.txt",
+      "type" : "text/plain",
+      "size" : 4639
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "市价卖单自动撤单"
+  }, {
+    "name" : "feature",
+    "value" : "清算验证,/open/api/create_order"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suit"
+  }, {
+    "name" : "suite",
+    "value" : "test_clearing"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestOpenApiClearing"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-ORREJKSR"
+  }, {
+    "name" : "thread",
+    "value" : "24992-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Suit.test_clearing"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b6961c365d4fef0b.json",
+  "parameterValues" : [ ]
+}

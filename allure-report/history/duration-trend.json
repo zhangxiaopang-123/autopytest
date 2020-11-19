@@ -1,0 +1,90 @@
+[ {
+  "buildOrder" : 59,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/59/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 240870
+  }
+}, {
+  "buildOrder" : 58,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/58/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 220936
+  }
+}, {
+  "buildOrder" : 57,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/57/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 84510
+  }
+}, {
+  "buildOrder" : 56,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/56/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 5012
+  }
+}, {
+  "buildOrder" : 55,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/55/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 6248
+  }
+}, {
+  "buildOrder" : 50,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/50/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 5550
+  }
+}, {
+  "buildOrder" : 49,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/49/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 5954
+  }
+}, {
+  "buildOrder" : 48,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/48/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 5966
+  }
+}, {
+  "buildOrder" : 47,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/47/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 5602
+  }
+}, {
+  "buildOrder" : 46,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/46/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 5201
+  }
+}, {
+  "buildOrder" : 45,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/45/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 3621
+  }
+}, {
+  "buildOrder" : 44,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/44/allure",
+  "reportName" : "AllureReport",
+  "data" : { }
+}, {
+  "buildOrder" : 43,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/43/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 4733
+  }
+} ]

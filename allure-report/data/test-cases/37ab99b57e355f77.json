@@ -1,0 +1,212 @@
+{
+  "uid" : "37ab99b57e355f77",
+  "name" : "test_balance",
+  "fullName" : "Suit.test_account_balance.TestOpenApi#test_balance",
+  "historyId" : "280f39d0492557a468f14f4dd9c966f8",
+  "time" : {
+    "start" : 1605689044841,
+    "stop" : 1605689046289,
+    "duration" : 1448
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1605689044732,
+      "stop" : 1605689044772,
+      "duration" : 40
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "bcf45e3b56794789",
+      "name" : "log",
+      "source" : "bcf45e3b56794789.txt",
+      "type" : "text/plain",
+      "size" : 266
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "用户资产查询成功"
+  }, {
+    "name" : "feature",
+    "value" : "查询账户资产,/open/api/user/account"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suit"
+  }, {
+    "name" : "suite",
+    "value" : "test_account_balance"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestOpenApi"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-ORREJKSR"
+  }, {
+    "name" : "thread",
+    "value" : "20780-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Suit.test_account_balance"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "dfc77d7ca45fcde2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1605685071112,
+        "stop" : 1605685071557,
+        "duration" : 445
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 11,
+        "unknown" : 0,
+        "total" : 12
+      },
+      "items" : [ {
+        "uid" : "ebb7906cc1cdf154",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/58/allure/#testresult/ebb7906cc1cdf154",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605685071112,
+          "stop" : 1605685071557,
+          "duration" : 445
+        }
+      }, {
+        "uid" : "a9f2a37281b5ffa2",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/57/allure/#testresult/a9f2a37281b5ffa2",
+        "status" : "broken",
+        "statusDetails" : "TypeError: 'NoneType' object is not subscriptable",
+        "time" : {
+          "start" : 1602809768649,
+          "stop" : 1602809801676,
+          "duration" : 33027
+        }
+      }, {
+        "uid" : "81dbf76ee1adfaf3",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/56/allure/#testresult/81dbf76ee1adfaf3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602655156009,
+          "stop" : 1602655156699,
+          "duration" : 690
+        }
+      }, {
+        "uid" : "3ac4147e616583ea",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/55/allure/#testresult/3ac4147e616583ea",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602655100241,
+          "stop" : 1602655101878,
+          "duration" : 1637
+        }
+      }, {
+        "uid" : "5422a06499993a99",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/50/allure/#testresult/5422a06499993a99",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602654275684,
+          "stop" : 1602654277284,
+          "duration" : 1600
+        }
+      }, {
+        "uid" : "99b8ce6545af9f6b",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/49/allure/#testresult/99b8ce6545af9f6b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602653977555,
+          "stop" : 1602653980190,
+          "duration" : 2635
+        }
+      }, {
+        "uid" : "c1050a3d3d27ada7",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/48/allure/#testresult/c1050a3d3d27ada7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602653779672,
+          "stop" : 1602653781859,
+          "duration" : 2187
+        }
+      }, {
+        "uid" : "e1b671db09690f8f",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/47/allure/#testresult/e1b671db09690f8f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602653371534,
+          "stop" : 1602653374069,
+          "duration" : 2535
+        }
+      }, {
+        "uid" : "522d81686bf4f922",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/46/allure/#testresult/522d81686bf4f922",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602653302134,
+          "stop" : 1602653304493,
+          "duration" : 2359
+        }
+      }, {
+        "uid" : "95754b603563a273",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/45/allure/#testresult/95754b603563a273",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602653197943,
+          "stop" : 1602653198914,
+          "duration" : 971
+        }
+      }, {
+        "uid" : "722c06391c703296",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/43/allure/#testresult/722c06391c703296",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602647333735,
+          "stop" : 1602647335869,
+          "duration" : 2134
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "37ab99b57e355f77.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,1057 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "LAPTOP-ORREJKSR",
+    "children" : [ {
+      "name" : "20780-MainThread",
+      "children" : [ {
+        "name" : "test_sell_limit_cancel",
+        "uid" : "a91118f72e05e354",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689073796,
+          "stop" : 1605689078616,
+          "duration" : 4820
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_order_check_side[buy]",
+        "uid" : "b9264a66ced6c767",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689279401,
+          "stop" : 1605689279738,
+          "duration" : 337
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'buy'" ]
+      }, {
+        "name" : "test_order_check_price[-1]",
+        "uid" : "a7c4c2e99647bb22",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689284315,
+          "stop" : 1605689284630,
+          "duration" : 315
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "-1" ]
+      }, {
+        "name" : "test_sell_limit_part_filled",
+        "uid" : "23942bb3d3782d2b",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689152068,
+          "stop" : 1605689167345,
+          "duration" : 15277
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_order_check_price[4000000]",
+        "uid" : "54cbec8a05929816",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689284049,
+          "stop" : 1605689284300,
+          "duration" : 251
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4000000" ]
+      }, {
+        "name" : "test_order_check_price[0]",
+        "uid" : "3c8dec0d6a66e956",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689283650,
+          "stop" : 1605689284047,
+          "duration" : 397
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "test_sell_market_filled",
+        "uid" : "226365577e8059fe",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689263883,
+          "stop" : 1605689279068,
+          "duration" : 15185
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_order_check_price[]",
+        "uid" : "2cb0f8148bba30d",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689284858,
+          "stop" : 1605689285126,
+          "duration" : 268
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''" ]
+      }, {
+        "name" : "test_buy_market_part_filled_cancel",
+        "uid" : "97bea040f30115b7",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689206845,
+          "stop" : 1605689222797,
+          "duration" : 15952
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_order_check_type[]",
+        "uid" : "87eff44e15d34d5f",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689282082,
+          "stop" : 1605689282339,
+          "duration" : 257
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''" ]
+      }, {
+        "name" : "test_order_check_volume[]",
+        "uid" : "b63e84dc277c9eec",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689283379,
+          "stop" : 1605689283636,
+          "duration" : 257
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''" ]
+      }, {
+        "name" : "test_buy_limit_filled",
+        "uid" : "8b114df229dc47eb",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689117657,
+          "stop" : 1605689131001,
+          "duration" : 13344
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_order_check_type[1.2]",
+        "uid" : "83f8c09bfded610d",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689281385,
+          "stop" : 1605689281820,
+          "duration" : 435
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1.2" ]
+      }, {
+        "name" : "test_buy_market_filled",
+        "uid" : "114c7cc3a7acf491",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689227131,
+          "stop" : 1605689241379,
+          "duration" : 14248
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_order_check_side[Sell]",
+        "uid" : "e6fc37264455d1d7",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689280361,
+          "stop" : 1605689280788,
+          "duration" : 427
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'Sell'" ]
+      }, {
+        "name" : "test_order_check_type[4]",
+        "uid" : "a95691e1744adf26",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689281136,
+          "stop" : 1605689281381,
+          "duration" : 245
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "test_sell_limit_part_filled_cancel",
+        "uid" : "6d02485ddde1ee90",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689188434,
+          "stop" : 1605689204601,
+          "duration" : 16167
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_sell_limit",
+        "uid" : "4a23ff67c9aceda4",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689059430,
+          "stop" : 1605689063688,
+          "duration" : 4258
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_sell_market_part_filled_cancel",
+        "uid" : "79dbc6c5551ec432",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689246240,
+          "stop" : 1605689261604,
+          "duration" : 15364
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_sell_limit_filled",
+        "uid" : "9c6c19fea4d7e45",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689171885,
+          "stop" : 1605689185431,
+          "duration" : 13546
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_buy_limit_cancel",
+        "uid" : "5c685d8776e867ef",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689067849,
+          "stop" : 1605689071693,
+          "duration" : 3844
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_order_check_volume[4000000]",
+        "uid" : "3c9486c7dbe6c156",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689282595,
+          "stop" : 1605689282894,
+          "duration" : 299
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4000000" ]
+      }, {
+        "name" : "test_order_check_side[]",
+        "uid" : "a425c367eb313028",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689279137,
+          "stop" : 1605689279395,
+          "duration" : 258
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''" ]
+      }, {
+        "name" : "test_sell_market",
+        "uid" : "e729743db2899633",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689091087,
+          "stop" : 1605689095409,
+          "duration" : 4322
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_fail",
+        "uid" : "e5d185323539212a",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689046363,
+          "stop" : 1605689046539,
+          "duration" : 176
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_order_check_volume[zhang]",
+        "uid" : "83f214fdc6eb5531",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689283112,
+          "stop" : 1605689283364,
+          "duration" : 252
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'zhang'" ]
+      }, {
+        "name" : "test_order_check_side[sell]",
+        "uid" : "c4718b1931256caf",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689280002,
+          "stop" : 1605689280357,
+          "duration" : 355
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'sell'" ]
+      }, {
+        "name" : "test_order_check_volume[0]",
+        "uid" : "be112e3fa5cd6a84",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689282355,
+          "stop" : 1605689282591,
+          "duration" : 236
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "test_order_check_side[Buy]",
+        "uid" : "679782ceeba63b9d",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689279743,
+          "stop" : 1605689279998,
+          "duration" : 255
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'Buy'" ]
+      }, {
+        "name" : "test_buy_limit_part_filled_cancel",
+        "uid" : "77c2d7757434cc3a",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689134368,
+          "stop" : 1605689149852,
+          "duration" : 15484
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_buy_market",
+        "uid" : "80410523dde8a0a2",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689082753,
+          "stop" : 1605689087434,
+          "duration" : 4681
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_balance",
+        "uid" : "37ab99b57e355f77",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689044841,
+          "stop" : 1605689046289,
+          "duration" : 1448
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_order_check_type[zhang]",
+        "uid" : "932f3141c5f41225",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689281823,
+          "stop" : 1605689282068,
+          "duration" : 245
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'zhang'" ]
+      }, {
+        "name" : "test_buy_limit_part_filled",
+        "uid" : "d570df3dd1a245a7",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689097501,
+          "stop" : 1605689112970,
+          "duration" : 15469
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_order_check_volume[-1]",
+        "uid" : "db6ff713c5a58c8f",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689282897,
+          "stop" : 1605689283097,
+          "duration" : 200
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "-1" ]
+      }, {
+        "name" : "test_order_check_volume_type[-2]",
+        "uid" : "1cc20e0f90035bc0",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "failed",
+        "time" : {
+          "start" : 1605689285454,
+          "stop" : 1605689285711,
+          "duration" : 257
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "2" ]
+      }, {
+        "name" : "test_order_check_volume_type[1-2]",
+        "uid" : "55efe313c8f335c4",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "failed",
+        "time" : {
+          "start" : 1605689285146,
+          "stop" : 1605689285421,
+          "duration" : 275
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1", "2" ]
+      }, {
+        "name" : "test_buy_limit",
+        "uid" : "d229d4e9fbd14f25",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689048959,
+          "stop" : 1605689054973,
+          "duration" : 6014
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_order_check_price[zhang]",
+        "uid" : "cacfa54cc846385d",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689284644,
+          "stop" : 1605689284845,
+          "duration" : 201
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'zhang'" ]
+      }, {
+        "name" : "test_order_check_type[0]",
+        "uid" : "13cdba877d999efc",
+        "parentUid" : "82ee4060737229fde08b9944f4638e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605689280801,
+          "stop" : 1605689281121,
+          "duration" : 320
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      } ],
+      "uid" : "82ee4060737229fde08b9944f4638e02"
+    }, {
+      "name" : "24992-MainThread",
+      "children" : [ {
+        "name" : "test_order_check_type[0]",
+        "uid" : "399b49f284ddb510",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1605685291959,
+          "stop" : 1605685291959,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "test_order_check_volume_type[-2]",
+        "uid" : "153fd8c75b0bb534",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1605685292048,
+          "stop" : 1605685292048,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "2" ]
+      }, {
+        "name" : "test_sell_limit_part_filled",
+        "uid" : "72ce281f2d195c7",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605685169385,
+          "stop" : 1605685184084,
+          "duration" : 14699
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_buy_market_filled",
+        "uid" : "ea7c96c84d8d854c",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605685240458,
+          "stop" : 1605685255944,
+          "duration" : 15486
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_buy_limit_part_filled_cancel",
+        "uid" : "2745a2938298cd0f",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605685151589,
+          "stop" : 1605685167323,
+          "duration" : 15734
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_order_check_volume[-1]",
+        "uid" : "5119bdaaa3971b10",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1605685291998,
+          "stop" : 1605685291998,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "-1" ]
+      }, {
+        "name" : "test_order_check_volume[zhang]",
+        "uid" : "a4ab78c733d2ec05",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1605685292004,
+          "stop" : 1605685292004,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'zhang'" ]
+      }, {
+        "name" : "test_sell_market",
+        "uid" : "b6961c365d4fef0b",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605685110810,
+          "stop" : 1605685114413,
+          "duration" : 3603
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_order_check_price[zhang]",
+        "uid" : "61a0139173732b5",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1605685292032,
+          "stop" : 1605685292032,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'zhang'" ]
+      }, {
+        "name" : "test_order_check_type[4]",
+        "uid" : "c2f68cc992a07987",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1605685291965,
+          "stop" : 1605685291965,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "test_sell_market_filled",
+        "uid" : "9fe65cb4eec9ac6b",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605685277098,
+          "stop" : 1605685291893,
+          "duration" : 14795
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_buy_limit_part_filled",
+        "uid" : "3a8793a17b3bddb8",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605685117454,
+          "stop" : 1605685132084,
+          "duration" : 14630
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_sell_limit_filled",
+        "uid" : "b8b3d9cc01524464",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605685187680,
+          "stop" : 1605685201271,
+          "duration" : 13591
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_order_check_price[-1]",
+        "uid" : "aaea1e625e1dd97b",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1605685292027,
+          "stop" : 1605685292027,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "-1" ]
+      }, {
+        "name" : "test_order_check_type[zhang]",
+        "uid" : "97dc8d5886709549",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1605685291976,
+          "stop" : 1605685291976,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'zhang'" ]
+      }, {
+        "name" : "test_order_check_price[4000000]",
+        "uid" : "365be307ba98ba0c",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1605685292020,
+          "stop" : 1605685292020,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4000000" ]
+      }, {
+        "name" : "test_order_check_side[]",
+        "uid" : "d06c851d391861f3",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1605685291895,
+          "stop" : 1605685291895,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''" ]
+      }, {
+        "name" : "test_order_check_type[]",
+        "uid" : "ef25dd082f9b8427",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1605685291981,
+          "stop" : 1605685291981,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''" ]
+      }, {
+        "name" : "test_order_check_side[sell]",
+        "uid" : "235cb724dbd9467e",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1605685291947,
+          "stop" : 1605685291947,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'sell'" ]
+      }, {
+        "name" : "test_order_check_side[Sell]",
+        "uid" : "5f068f1ee73f2ed9",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1605685291953,
+          "stop" : 1605685291953,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'Sell'" ]
+      }, {
+        "name" : "test_sell_limit_cancel",
+        "uid" : "e83baaa6feec6310",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605685095851,
+          "stop" : 1605685100009,
+          "duration" : 4158
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_buy_limit_filled",
+        "uid" : "dd150add42c00f3b",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605685135709,
+          "stop" : 1605685149489,
+          "duration" : 13780
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_buy_limit_cancel",
+        "uid" : "1481b22088b73ba7",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605685089942,
+          "stop" : 1605685093778,
+          "duration" : 3836
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_order_check_volume[4000000]",
+        "uid" : "87f5a94e29fc2af",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1605685291993,
+          "stop" : 1605685291993,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4000000" ]
+      }, {
+        "name" : "test_order_check_price[0]",
+        "uid" : "bc704ca848c1baf2",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1605685292015,
+          "stop" : 1605685292015,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "test_order_check_side[Buy]",
+        "uid" : "cbf5744e6005aa1b",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1605685291942,
+          "stop" : 1605685291942,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'Buy'" ]
+      }, {
+        "name" : "test_order_check_type[1.2]",
+        "uid" : "23e5419c6ed0f1a5",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1605685291971,
+          "stop" : 1605685291971,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1.2" ]
+      }, {
+        "name" : "test_order_check_price[]",
+        "uid" : "2a91a9a87c343b9c",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1605685292037,
+          "stop" : 1605685292037,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''" ]
+      }, {
+        "name" : "test_order_check_volume[]",
+        "uid" : "2f7ebfbd5a18d8d0",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1605685292010,
+          "stop" : 1605685292010,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''" ]
+      }, {
+        "name" : "test_balance",
+        "uid" : "dfc77d7ca45fcde2",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605685071112,
+          "stop" : 1605685071557,
+          "duration" : 445
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_order_check_side[buy]",
+        "uid" : "ed4948470300fa50",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1605685291936,
+          "stop" : 1605685291936,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'buy'" ]
+      }, {
+        "name" : "test_buy_limit",
+        "uid" : "31d6fe167f538773",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605685073834,
+          "stop" : 1605685076920,
+          "duration" : 3086
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_buy_market_part_filled_cancel",
+        "uid" : "b2d8294974b867a5",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605685221329,
+          "stop" : 1605685236536,
+          "duration" : 15207
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_sell_limit",
+        "uid" : "a9d339d6df848607",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605685081471,
+          "stop" : 1605685086467,
+          "duration" : 4996
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_order_check_volume[0]",
+        "uid" : "2ab8f6501b994d22",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1605685291988,
+          "stop" : 1605685291988,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "test_sell_limit_part_filled_cancel",
+        "uid" : "1f36d48c2ffae0fe",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605685205462,
+          "stop" : 1605685219134,
+          "duration" : 13672
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_fail",
+        "uid" : "c55d029d8be5122b",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605685071627,
+          "stop" : 1605685071784,
+          "duration" : 157
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_sell_market_part_filled_cancel",
+        "uid" : "579e1d1e5516563a",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605685260247,
+          "stop" : 1605685274277,
+          "duration" : 14030
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_buy_market",
+        "uid" : "f4150f982686ece5",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605685102527,
+          "stop" : 1605685107289,
+          "duration" : 4762
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_order_check_volume_type[1-2]",
+        "uid" : "469bc937ce314082",
+        "parentUid" : "668609ae9c3c791bfb0220a44fbfb40f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1605685292043,
+          "stop" : 1605685292043,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1", "2" ]
+      } ],
+      "uid" : "668609ae9c3c791bfb0220a44fbfb40f"
+    } ],
+    "uid" : "acdcef64e283a5fe03553ee5419f80c8"
+  } ]
+}

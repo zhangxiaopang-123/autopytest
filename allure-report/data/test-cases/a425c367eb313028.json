@@ -1,0 +1,247 @@
+{
+  "uid" : "a425c367eb313028",
+  "name" : "test_order_check_side[]",
+  "fullName" : "Suit.test_create_order.TestOpenApi#test_order_check_side",
+  "historyId" : "8b8438bb00a004b7edd4050218c00386",
+  "time" : {
+    "start" : 1605689279137,
+    "stop" : 1605689279395,
+    "duration" : 258
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1605689044732,
+      "stop" : 1605689044772,
+      "duration" : 40
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1605689279070,
+      "stop" : 1605689279137,
+      "duration" : 67
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b559b8efd255cb5c",
+      "name" : "log",
+      "source" : "b559b8efd255cb5c.txt",
+      "type" : "text/plain",
+      "size" : 721
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1605689285726,
+      "stop" : 1605689285726,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "创建订单,/open/api/create_order"
+  }, {
+    "name" : "story",
+    "value" : "下单参数校验-side-买卖方向"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suit"
+  }, {
+    "name" : "suite",
+    "value" : "test_create_order"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestOpenApi"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-ORREJKSR"
+  }, {
+    "name" : "thread",
+    "value" : "20780-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Suit.test_create_order"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "side",
+    "value" : "''"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "d06c851d391861f3",
+      "status" : "broken",
+      "statusDetails" : "TypeError: environment() takes 1 positional argument but 2 were given",
+      "time" : {
+        "start" : 1605685291895,
+        "stop" : 1605685291895,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 10,
+        "unknown" : 0,
+        "total" : 12
+      },
+      "items" : [ {
+        "uid" : "25ad246009cd89cc",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/58/allure/#testresult/25ad246009cd89cc",
+        "status" : "broken",
+        "statusDetails" : "TypeError: environment() takes 1 positional argument but 2 were given",
+        "time" : {
+          "start" : 1605685291895,
+          "stop" : 1605685291895,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "d54328edd0beb1d1",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/57/allure/#testresult/d54328edd0beb1d1",
+        "status" : "broken",
+        "statusDetails" : "TypeError: 'NoneType' object is not subscriptable",
+        "time" : {
+          "start" : 1602809822831,
+          "stop" : 1602809843835,
+          "duration" : 21004
+        }
+      }, {
+        "uid" : "c789006991280556",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/56/allure/#testresult/c789006991280556",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602655157000,
+          "stop" : 1602655157171,
+          "duration" : 171
+        }
+      }, {
+        "uid" : "17b5f9fd091f56e2",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/55/allure/#testresult/17b5f9fd091f56e2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602655102157,
+          "stop" : 1602655102316,
+          "duration" : 159
+        }
+      }, {
+        "uid" : "a5bec430c84c15d6",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/50/allure/#testresult/a5bec430c84c15d6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602654277591,
+          "stop" : 1602654277761,
+          "duration" : 170
+        }
+      }, {
+        "uid" : "fa434096348d45b3",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/49/allure/#testresult/fa434096348d45b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602653980484,
+          "stop" : 1602653980636,
+          "duration" : 152
+        }
+      }, {
+        "uid" : "ed7508662f3ce4dd",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/48/allure/#testresult/ed7508662f3ce4dd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602653782152,
+          "stop" : 1602653782522,
+          "duration" : 370
+        }
+      }, {
+        "uid" : "32855bac7a94948d",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/47/allure/#testresult/32855bac7a94948d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602653374376,
+          "stop" : 1602653374543,
+          "duration" : 167
+        }
+      }, {
+        "uid" : "60b2fd8c14357ebf",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/46/allure/#testresult/60b2fd8c14357ebf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602653304798,
+          "stop" : 1602653304965,
+          "duration" : 167
+        }
+      }, {
+        "uid" : "4e4d914c2e68d5ba",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/45/allure/#testresult/4e4d914c2e68d5ba",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602653199210,
+          "stop" : 1602653199372,
+          "duration" : 162
+        }
+      }, {
+        "uid" : "3d4f8dc4b8366ec8",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/43/allure/#testresult/3d4f8dc4b8366ec8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602647336154,
+          "stop" : 1602647336319,
+          "duration" : 165
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a425c367eb313028.json",
+  "parameterValues" : [ "''" ]
+}

@@ -1,0 +1,15 @@
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "8b07f91fa7732073aba0b4115908eb8a",
+    "name" : "Suit",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 38,
+      "unknown" : 0,
+      "total" : 40
+    }
+  } ]
+}

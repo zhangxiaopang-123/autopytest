@@ -1,0 +1,121 @@
+{
+  "uid" : "114c7cc3a7acf491",
+  "name" : "test_buy_market_filled",
+  "fullName" : "Suit.test_clearing.TestOpenApiClearing#test_buy_market_filled",
+  "historyId" : "dd2ad13c67c699c564440fc5b1920358",
+  "time" : {
+    "start" : 1605689227131,
+    "stop" : 1605689241379,
+    "duration" : 14248
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1605689044732,
+      "stop" : 1605689044772,
+      "duration" : 40
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "92d33818b3de4a66",
+      "name" : "log",
+      "source" : "92d33818b3de4a66.txt",
+      "type" : "text/plain",
+      "size" : 5690
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "清算验证,/open/api/create_order"
+  }, {
+    "name" : "story",
+    "value" : "市价买单完全成交"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suit"
+  }, {
+    "name" : "suite",
+    "value" : "test_clearing"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestOpenApiClearing"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-ORREJKSR"
+  }, {
+    "name" : "thread",
+    "value" : "20780-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Suit.test_clearing"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "ea7c96c84d8d854c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1605685240458,
+        "stop" : 1605685255944,
+        "duration" : 15486
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "dcc35a1c7bdce593",
+        "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/58/allure/#testresult/dcc35a1c7bdce593",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605685240458,
+          "stop" : 1605685255944,
+          "duration" : 15486
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "114c7cc3a7acf491.json",
+  "parameterValues" : [ ]
+}

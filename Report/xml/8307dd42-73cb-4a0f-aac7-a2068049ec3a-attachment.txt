@@ -1,0 +1,6 @@
+INFO     root:config.py:74 {'api_key': 'b6301c6a9fec6ce9215eb7b1ea4d29c3', 'time': 1605689279, 'side': 'SELL', 'type': 2, 'volume': 1, 'price': '', 'symbol': 'xpusdt', 'sign': '81dbf6bd3019838c455e07199d519c92'}
+INFO     root:config.py:74 http://openapinx.v3.wbfexchina.top/open/api/create_order
+INFO     root:config.py:74 <Response [200]>
+INFO     root:config.py:74 {'api_key': 'b6301c6a9fec6ce9215eb7b1ea4d29c3', 'time': 1605689279, 'side': 'SELL', 'type': 2, 'volume': 1, 'price': '', 'symbol': 'xpusdt', 'sign': '81dbf6bd3019838c455e07199d519c92'}
+INFO     root:config.py:74 http://openapinx.v3.wbfexchina.top/open/api/create_order
+INFO     root:config.py:74 {'code': '100005', 'msg': 'request sign illegal', 'data': None}

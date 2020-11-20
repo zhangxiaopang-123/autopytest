@@ -166,7 +166,7 @@ class Order:
 
 if __name__ == '__main__':
 
-    Order().account_balance(config.types, config.currency[0])[0]
+    Order().account_balance(config.types, config.currency[1])[0]
     # Order().lastprice('xpusdt')
     # Order().account_balance('old', 'eos')  # 账户资产新老验签方式验证
     # p = {

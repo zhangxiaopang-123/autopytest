@@ -7,13 +7,13 @@
       "name" : "AssertionError: assert '0' == '5'\n  - 5\n  + 0",
       "children" : [ {
         "name" : "test_order_check_volume_type[1-2]",
-        "uid" : "55efe313c8f335c4",
+        "uid" : "7bca3063e2324bed",
         "parentUid" : "18c14d38ba18fc0c43fb8820896685cc",
         "status" : "failed",
         "time" : {
-          "start" : 1605689285146,
-          "stop" : 1605689285421,
-          "duration" : 275
+          "start" : 1605867497857,
+          "stop" : 1605867498125,
+          "duration" : 268
         },
         "flaky" : false,
         "newFailed" : false,
@@ -24,13 +24,13 @@
       "name" : "AssertionError: assert '100005' == '5'\n  - 5\n  + 100005",
       "children" : [ {
         "name" : "test_order_check_volume_type[-2]",
-        "uid" : "1cc20e0f90035bc0",
+        "uid" : "e11b538e59aaca1f",
         "parentUid" : "93b513a236f301996f4dc096400cd6cc",
         "status" : "failed",
         "time" : {
-          "start" : 1605689285454,
-          "stop" : 1605689285711,
-          "duration" : 257
+          "start" : 1605867498165,
+          "stop" : 1605867498447,
+          "duration" : 282
         },
         "flaky" : false,
         "newFailed" : false,

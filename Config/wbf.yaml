@@ -39,12 +39,12 @@ stg:
     port: 3306
     user: test_wallet_writer
     password: LdSqnUA68ZV8sBnC
-    database: exchange_kline
+    database: exchange
   access-key: 57aeb234d3034285e2336d2a317c9942,bdfe50c34968f17a2274dc1949871199
   secret-key: 4c79da4af377f300c358cc6e022b4dc5,8f2ddfd9ff6b39d95b7480308c8b4398
-  host: https://beta-openapi.wbfex.info:32004
+  host: https://beta-openapi.wbfexchina.top:32004
   uid:  69234152
-  _host: wss://beta-ws.wbfex.info:32004/kline-api
+  _host: wss://beta-ws.wbfexchina.top:32004/kline-api
 
 
 

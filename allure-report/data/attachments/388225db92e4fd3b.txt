@@ -1,6 +1,0 @@
-INFO     root:config.py:74 {'api_key': 'b6301c6a9fec6ce9215eb7b1ea4d29c3', 'time': 1605689279, 'side': 'sell', 'type': 1, 'volume': 1, 'price': 1, 'symbol': 'xpusdt', 'sign': '1f5395872dc9563858759d654ecaaba3'}
-INFO     root:config.py:74 http://openapinx.v3.wbfexchina.top/open/api/create_order
-INFO     root:config.py:74 <Response [200]>
-INFO     root:config.py:74 {'api_key': 'b6301c6a9fec6ce9215eb7b1ea4d29c3', 'time': 1605689279, 'side': 'sell', 'type': 1, 'volume': 1, 'price': 1, 'symbol': 'xpusdt', 'sign': '1f5395872dc9563858759d654ecaaba3'}
-INFO     root:config.py:74 http://openapinx.v3.wbfexchina.top/open/api/create_order
-INFO     root:config.py:74 {'code': '5', 'msg': 'Place the order failed', 'data': None}

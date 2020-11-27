@@ -1,4 +1,20 @@
 [ {
+  "buildOrder" : 60,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/60/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 43,
+    "retry" : 56
+  }
+}, {
+  "buildOrder" : 59,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/59/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 40,
+    "retry" : 40
+  }
+}, {
   "buildOrder" : 58,
   "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/58/allure",
   "reportName" : "AllureReport",

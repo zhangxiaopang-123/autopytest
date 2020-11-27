@@ -1,3 +1,0 @@
-INFO     root:config.py:74 {'api_key': 'b6301c6a9fec6ce9215eb7b1ea4d29c3', 'time': 1605689044, 'sign': '841b06a0c1defebf84fc163310154207'}
-INFO     root:config.py:74 http://openapinx.v3.wbfexchina.top/open/api/user/account
-INFO     root:config.py:74 <Response [200]>

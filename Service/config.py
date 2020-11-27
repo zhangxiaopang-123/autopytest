@@ -6,12 +6,14 @@ import time
 
 basedir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # print(basedir)
-env_name = 'test'  # 切换环境
+env_name = 'stg'  # 切换环境
 sex = 0   # 返回环境对应得key、value
-symbol = 'xpusdt'
+symbol = 'xrpusdt'
 types = 'old'  # 选择验签方式,old为老得验签方式,new为新得验签方式
-user_id = 81297219
-currency = ['xp', 'usdt']
+# user_id = 81297219
+user_id = 69234152
+
+currency = ['xrp', 'usdt']
 # symbol = 'test100usdt'  # 行情计算
 
 

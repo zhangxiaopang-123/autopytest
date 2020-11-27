@@ -1,4 +1,28 @@
 [ {
+  "buildOrder" : 60,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/60/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 2,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 41,
+    "unknown" : 0,
+    "total" : 43
+  }
+}, {
+  "buildOrder" : 59,
+  "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/59/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 2,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 38,
+    "unknown" : 0,
+    "total" : 40
+  }
+}, {
   "buildOrder" : 58,
   "reportUrl" : "http://localhost:8080/jenkins/job/autopytest/58/allure",
   "reportName" : "AllureReport",

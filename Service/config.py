@@ -10,10 +10,10 @@ env_name = 'stg'  # 切换环境
 sex = 0   # 返回环境对应得key、value
 symbol = 'xrpusdt'
 types = 'old'  # 选择验签方式,old为老得验签方式,new为新得验签方式
-# user_id = 81297219
-user_id = 69234152
+# user_id = 81297219  # 测试
+user_id = 69234152  # 预发
 
-currency = ['xrp', 'usdt']
+currency = ['XRP', 'USDT']
 # symbol = 'test100usdt'  # 行情计算
 
 
@@ -101,7 +101,6 @@ class Con:
 
 
 if __name__ == '__main__':
-    # Con().error_log('test', 'test', 'test')
-    Con().info_log('test', 'test', 'test')
+    print(float(3))
 
 

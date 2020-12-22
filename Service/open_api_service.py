@@ -53,15 +53,35 @@ class Order:
         :return:
         """
         p = {"api_key": api_key, "time": Con().now_time()}
-        request_path = '/open/api/user/account'
-        result = wbf_signature.Signature(secret_key).get_sign(types, p, request_path, host)
-        # print('查询资产响应:{}'.format(result))
-        coin = result['data']['coin_list']
-        for i in range(0, len(coin)):
-            if coin[i]['coin'] == currency:
-                Con().info_log(currency, coin[i]['normal'], coin[i]['locked'])
-                print('查询资产:{},{}'.format(coin[i]['normal'], coin[i]['locked']))
-                return coin[i]['normal'], coin[i]['locked']
+        request_path = '/open/api/user/v2/account'
+        # request_path = '/open/api/user/account'
+        try:
+            result = wbf_signature.Signature(secret_key).get_sign(types, p, request_path, host)
+            # print('查询资产响应:{}'.format(result))
+            if result['code'] == '0':
+                coin = result['data']['coin_list']
+                for i in range(0, len(coin)):
+                    if coin[i]['coin'] == currency:
+                        Con().info_log(currency, coin[i]['normal'], coin[i]['locked'])
+                        # print('查询资产:{},{}'.format(coin[i]['normal'], coin[i]['locked']))
+                        if coin[i]['normal'] is None and coin[i]['locked'] is not None:
+                            return 0, coin[i]['locked']
+                        elif coin[i]['normal'] is not None and coin[i]['locked'] is None:
+                            return coin[i]['normal'], 0
+                        elif coin[i]['normal'] is None and coin[i]['locked'] is None:
+                            return 0, 0
+                        else:
+                            return coin[i]['normal'], coin[i]['locked']
+
+        except Exception as e:
+            Con().error_log(currency, result, e)
+
+
+
+
+
+
+
 
     def unfilled_order(self, types, p):
         """

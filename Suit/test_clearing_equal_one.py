@@ -9,7 +9,7 @@ import pytest
 import allure
 
 
-@allure.feature('清算验证,限价、市价风险率为0.2;'
+@allure.feature('清算一对一验证,限价、市价风险率为0.2;'
                 '目前撮合代码中只对市价有默认风险率,限价没有风险率;'
                 '由于openapi查询资产接口特殊处理、获取的是截取精度为2的资产;'
                 '执行此自动化验证前,请保证盘口数据归0,定序、撮合、清算ok,配置风险率限价和市价都为0.2')
@@ -68,7 +68,7 @@ class TestOpenApiClearing(object):
             config.symbol, config.user_id)  # 查询订单
         rq = sqlmethods.SQL(
             self.db_host, self.db_user, self.db_password, self.db_port, self.db_database).sql_select(sql)
-        # print(rq)
+        print(sql)
         assert result['data']['order_id'] == rq[0][0] and rq[0][1] == 0 and rq[0][2] == 'BUY' and rq[0][3] == 1
         open_api_service.Order().cancel_all(config.types)
 
@@ -1488,4 +1488,4 @@ class TestOpenApiClearing(object):
 
 
 if __name__ == '__main__':
-    pytest.main(["-s", "test_clearing.py"])
+    pytest.main(["-s", "test_clearing_equal_one.py"])

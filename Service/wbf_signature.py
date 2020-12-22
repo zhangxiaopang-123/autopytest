@@ -49,7 +49,7 @@ class Signature:
         # print("请求参数:{}".format(p))
         try:
             res = requests.get(url=url, params=p)
-            print('请求信息:{}'.format(res))
+            # print('请求信息:{}'.format(res))
             Con().info_log(p, url, res)
             if res.status_code == 200:
                 r = res.json()
@@ -67,10 +67,10 @@ class Signature:
         url = host + request_path
         # print("请求域名:{}".format(url))
         p['sign'] = si
-        print("请求参数:{}".format(p))
+        # print("请求参数:{}".format(p))
         try:
             res = requests.post(url=url, data=p, headers={'content-type': "application/x-www-form-urlencoded", 'cache-control': "no-cache"})
-            print('response-code:{}'.format(res))
+            # print('response-code:{}'.format(res))
             Con().info_log(p, url, res)
             if res.status_code == 200:
                 r = res.json()

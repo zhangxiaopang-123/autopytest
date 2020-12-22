@@ -14,7 +14,6 @@ online:
 
 test:
   db:
-#    host: wbfex-v3test-aurora.cluster-c6rgl3tuc9lz.rds.cn-northwest-1.amazonaws.com.cn
     host: v3dev.c6rgl3tuc9lz.rds.cn-northwest-1.amazonaws.com.cn
     port: 3306
     user: wbfdevwr
@@ -25,10 +24,10 @@ test:
   pwd: zhang123456
 #  access-key: 893fabccc64749980808774244b60330,bb0aac30e0b3c58dcbdd619da372a7f2
 #  secret-key: dd396c29f603250e9636c31fbb4d3f21,faca13a8727d31fc12a6c6b91cb9c938
-  access-key: b6301c6a9fec6ce9215eb7b1ea4d29c3,bb0aac30e0b3c58dcbdd619da372a7f2
-  secret-key: 74dc2201065a55b4a02fe4d5ee505758,faca13a8727d31fc12a6c6b91cb9c938
-  host: http://openapinx.v3.wbfexchina.top
-  uid: 98797342,60092536
+  access-key: 69ab18fa0380cc63240683cd18161147,bb0aac30e0b3c58dcbdd619da372a7f2
+  secret-key: b2f8fa29aaacc03a69b950fc56c70ded,faca13a8727d31fc12a6c6b91cb9c938
+  host: http://openapi.devnx.wbfexchina.top:88
+  uid: 81297219,98797342,60092536
   _host: ws://wsnx.v3.wbfexchina.top/kline-api
 
 
@@ -40,8 +39,8 @@ stg:
     user: test_wallet_writer
     password: LdSqnUA68ZV8sBnC
     database: exchange
-  access-key: 57aeb234d3034285e2336d2a317c9942,bdfe50c34968f17a2274dc1949871199
-  secret-key: 4c79da4af377f300c358cc6e022b4dc5,8f2ddfd9ff6b39d95b7480308c8b4398
+  access-key: 0bf03dc8760e743e81b0341ab201b6f8,bdfe50c34968f17a2274dc1949871199
+  secret-key: 4b928a44b7981ea43edef0d83c63f431,8f2ddfd9ff6b39d95b7480308c8b4398
   host: https://beta-openapi.wbfexchina.top:32004
   uid:  69234152
   _host: wss://beta-ws.wbfexchina.top:32004/kline-api
